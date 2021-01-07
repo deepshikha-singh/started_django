@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  {% load static %}
 <head>
 <title>Page Title</title>
 <meta charset="UTF-8">
@@ -19,7 +20,7 @@ body {
 .header {
   padding: 80px;
   text-align: center;
-  background: #1abc9c;
+  background:#800080;
   color: white;
 }
 
@@ -101,7 +102,7 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background: #800080;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -123,8 +124,8 @@ body {
 <body>
 
 <div class="header">
-  <h1>My Website</h1>
-  <p>A <b>responsive</b> website created by me.</p>
+  <h1>Singh & Son's Housing</h1>
+  <p>A <b>responsive</b> website created by Deep-Shikha Singh.</p>
 </div>
 
 <div class="navbar">
@@ -138,24 +139,27 @@ body {
   <div class="side">
     <h2>About Me</h2>
     <h5>Photo of me:</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    <h3>More Text</h3>
-    <p>Lorem ipsum dolor sit ame.</p>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div>
+    <div class="fakeimg" style="height:310px;"><img src="{% static 'img/logo1.jpg' %}" style="      height: 100%;"/></div>
+    <p><h3>"Real estate is like Jack and the Beanstalk’s goose that lays golden eggs. It’s something that pays you month after month, whether you are working or not."</h3></p>
+    <h3>You’ve just found the home of your dreams! Now you need to sell your current home. Regardless of whether you’re selling in a buyer’s market or a seller’s market, the tips and tricks for selling your home fast are the same. In either market, you’ll find that buyers are most interested in your property during the first few weeks after you put it on the market, so you’ll want your home to be in prime condition from day one to sell quickly.
+
+      To help you through the process, we’ve compiled all the tips for selling your home that you need to make a quick sale and move into your dream home.</h3>
+
+    <img src="{% static 'img/0.jpg' %}"style="      height: 70%;"/>
+    <div class="fakeimg" style="height:20px;"> <img src="{% static 'img/1.jpg'%}" style="      height: 100%;"/></div><br>
+    <div class="fakeimg" style="height:20px;"><img src="{% static 'img/7.jpg' %}" style="      height: 100%;"/></div><br>
+    <div class="fakeimg" style="height:20px;"><img src="{% static 'img/8.jpg' %}" style="      height: 100%;"/></div>
   </div>
   <div class="main">
     <h2>TITLE HEADING</h2>
     <h5>Title description, Dec 7, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
+    <div class="fakeimg" style="height:400px;"><img src="{% static 'img/9.jpg' %}" style="      height: 100%;"/></div>
     <p>Some text..</p>
     <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     <br>
     <h2>TITLE HEADING</h2>
     <h5>Title description, Sep 2, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
+    <div class="fakeimg" style="height:400px;"><img src="{% static 'img/6.jpg' %}" style="      height: 100%;"/></div>
     <p>Some text..</p>
     <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
   </div>
